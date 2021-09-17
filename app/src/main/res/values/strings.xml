@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TMDBMovies</string>
+    <string name="lbl_img_movie">"Movie Image"</string>
+
+    <string name="movies_title">Books</string>
+    <string name="erro_401"> 401 - Api não autorizada</string>
+    <string name="erro_400_generic"> 400 - Api não tratada</string>
+    <string name="erro_500_generic"> 500 - Problema no servidor</string>
+    <string name="lbl_overview">The government sends the most dangerous supervillains in the world
+        Bloodsport, Peacemaker, King Shark, Harley Quinn and others to the remote, enemy-infused
+        island of Corto Maltese. Armed with high-tech weapons, they trek through the dangerous
+        jungle on a search-and-destroy mission, with only Col. Rick Flag on the ground to make them
+        behave.
+    </string>
+    <string name="lbl_cast">Cast</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_movies">Movies</string>
+    <string name="lbl_fl_btn_home">Go to Home</string>
+</resources>

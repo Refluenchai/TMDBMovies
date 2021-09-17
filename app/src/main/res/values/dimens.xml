@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_h1">55sp</dimen>
+    <dimen name="font_h2">55sp</dimen>
+    <dimen name="font_h3">40sp</dimen>
+    <dimen name="font_h4">35sp</dimen>
+    <dimen name="font_h5">30sp</dimen>
+    <dimen name="font_h6">25sp</dimen>
+    <dimen name="font_h7">20sp</dimen>
+    <dimen name="font_h8">15sp</dimen>
+    <dimen name="font_h9">10sp</dimen>
+    <dimen name="font_h10">5sp</dimen>
+
+    <dimen name="h1">55sp</dimen>
+    <dimen name="h2">55sp</dimen>
+    <dimen name="h3">40dp</dimen>
+    <dimen name="h4">35sp</dimen>
+    <dimen name="h5">30sp</dimen>
+    <dimen name="h6">25dp</dimen>
+    <dimen name="h7">20dp</dimen>
+    <dimen name="h8">15dp</dimen>
+    <dimen name="h9">10dp</dimen>
+    <dimen name="h10">5dp</dimen>
+</resources>
