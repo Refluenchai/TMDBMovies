@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLightColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".view.fragment.LoginFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/h8"
+        android:text="@string/lbl_api_lang"
+        android:textSize="@dimen/font_h6" />
+
+    <include android:id="@+id/inc_edit_spinner"
+        layout="@layout/item_edit_spinner" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginHorizontal="@dimen/h8"
+        android:text="@string/lbl_login"
+        android:textSize="@dimen/font_h7" />
+</LinearLayout>

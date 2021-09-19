@@ -34,8 +34,6 @@ class MoviesFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
         binding = FragmentMoviesBinding.inflate(inflater, container, false)
 
-        binding.spGenres.onItemSelectedListener = this
-
         moviesViewModel = ViewModelProvider(
             this,
             MoviesViewModelFactory(MoviesRepository(""), GenresRepository())
@@ -61,6 +59,12 @@ class MoviesFragment : Fragment(), AdapterView.OnItemSelectedListener {
 
         moviesViewModel.getMovies()
         moviesViewModel.getGenres()
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        binding.spGenres.onItemSelectedListener = this
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, p3: Long) {

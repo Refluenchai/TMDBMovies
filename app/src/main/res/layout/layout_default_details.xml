@@ -38,7 +38,7 @@
                             android:layout_width="130dp"
                             android:layout_height="match_parent"
                             android:layout_gravity=""
-                            android:contentDescription="@string/lbl_img_movie"
+                            android:contentDescription="@string/img_movie_description"
                             tools:srcCompat="@drawable/suicide_squad" />
 
                         <LinearLayout
@@ -88,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/h8"
-                android:text="@string/lbl_cast"
+                tools:text="Cast"
                 android:textSize="@dimen/font_h7" />
 
             <androidx.recyclerview.widget.RecyclerView
@@ -107,7 +107,7 @@
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="@dimen/h8"
         android:backgroundTint="@color/primaryColor"
-        android:contentDescription="@string/lbl_fl_btn_home"
+        android:contentDescription="@string/fl_btn_home_description"
         app:borderWidth="0dp"
         app:srcCompat="@drawable/ic_home"
         app:tint="@color/colorOnPrimary" />

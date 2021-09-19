@@ -4,13 +4,14 @@ import com.slicedwork.tmdbmovies.data.model.Person
 import com.slicedwork.tmdbmovies.data.source.remote.response.person.PersonBody
 import com.slicedwork.tmdbmovies.data.source.remote.api.TmdbApi
 import com.slicedwork.tmdbmovies.data.results.Result
+import com.slicedwork.tmdbmovies.util.TmdbApplication
 import retrofit2.Call
 import retrofit2.Response
 import javax.security.auth.callback.Callback
 
 class PersonRepository(private val actorId: String = "") {
     fun getPerson(personResultsCallback: (result: Result) -> Unit) {
-        TmdbApi.tmdbService.getPerson(actorId).enqueue(object: Callback,
+        TmdbApi.tmdbService.getPerson(actorId, TmdbApplication.apiKey, TmdbApplication.language).enqueue(object: Callback,
             retrofit2.Callback<PersonBody>{
             override fun onResponse(call: Call<PersonBody>, response: Response<PersonBody>) {
                 when {

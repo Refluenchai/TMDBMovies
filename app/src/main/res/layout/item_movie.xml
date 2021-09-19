@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="150dp"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/h8">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/h8"
+    app:cardCornerRadius="@dimen/h8">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -15,7 +17,7 @@
             android:id="@+id/img_movie"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:contentDescription="@string/lbl_img_movie"
+            android:contentDescription="@string/img_movie_description"
             tools:srcCompat="@drawable/suicide_squad" />
 
         <TextView

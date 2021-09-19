@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/moviesFragment">
-
+    app:startDestination="@id/loginFragment">
+    <!--Movies-->
     <fragment
         android:id="@+id/moviesFragment"
         android:name="com.slicedwork.tmdbmovies.view.fragment.MoviesFragment"
@@ -14,6 +14,7 @@
             android:id="@+id/action_moviesFragment_to_movieDetailsFragment"
             app:destination="@id/movieDetailsFragment" />
     </fragment>
+    <!--Movie Details-->
     <fragment
         android:id="@+id/movieDetailsFragment"
         android:name="com.slicedwork.tmdbmovies.view.fragment.MovieDetailsFragment"
@@ -29,6 +30,7 @@
             android:name="movie"
             app:argType="com.slicedwork.tmdbmovies.data.model.Movie" />
     </fragment>
+    <!--Actor Details-->
     <fragment
         android:id="@+id/actorDetailsFragment"
         android:name="com.slicedwork.tmdbmovies.view.fragment.ActorDetailsFragment"
@@ -43,5 +45,15 @@
         <argument
             android:name="actor"
             app:argType="com.slicedwork.tmdbmovies.data.model.Actor" />
+    </fragment>
+    <!--Login-->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.slicedwork.tmdbmovies.view.fragment.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_moviesFragment"
+            app:destination="@id/moviesFragment" />
     </fragment>
 </navigation>

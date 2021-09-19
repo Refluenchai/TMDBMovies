@@ -4,13 +4,14 @@ import com.slicedwork.tmdbmovies.data.model.Genre
 import com.slicedwork.tmdbmovies.data.source.remote.response.genre.GenreBody
 import com.slicedwork.tmdbmovies.data.source.remote.api.TmdbApi
 import com.slicedwork.tmdbmovies.data.results.Result
+import com.slicedwork.tmdbmovies.util.TmdbApplication
 import retrofit2.Call
 import retrofit2.Response
 import javax.security.auth.callback.Callback
 
 class GenresRepository {
      fun getGenres(genreResultsCallBack: (result: Result) -> Unit) {
-        TmdbApi.tmdbService.getGenres().enqueue(object : Callback,
+        TmdbApi.tmdbService.getGenres(TmdbApplication.apiKey, TmdbApplication.language).enqueue(object : Callback,
             retrofit2.Callback<GenreBody> {
             override fun onResponse(call: Call<GenreBody>, response: Response<GenreBody>) {
                 when {

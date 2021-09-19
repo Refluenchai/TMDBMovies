@@ -4,13 +4,14 @@ import com.slicedwork.tmdbmovies.data.model.Technical
 import com.slicedwork.tmdbmovies.data.source.remote.response.credits.CreditsBody
 import com.slicedwork.tmdbmovies.data.source.remote.api.TmdbApi
 import com.slicedwork.tmdbmovies.data.results.Result
+import com.slicedwork.tmdbmovies.util.TmdbApplication
 import retrofit2.Call
 import retrofit2.Response
 import javax.security.auth.callback.Callback
 
 class CreditsRepository(private val movieId: String = "") {
     fun getCredits(creditsResultsCallback: (result: Result) -> Unit) {
-        TmdbApi.tmdbService.getCredits(movieId)
+        TmdbApi.tmdbService.getCredits(movieId, TmdbApplication.apiKey, TmdbApplication.language)
             .enqueue(object : Callback,
                 retrofit2.Callback<CreditsBody> {
                 override fun onResponse(call: Call<CreditsBody>, response: Response<CreditsBody>) {

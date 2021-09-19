@@ -9,10 +9,11 @@
 
     <Spinner
         android:id="@+id/sp_genres"
+        android:padding="@dimen/h7"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/actionBarSize"
         android:layout_marginBottom="@dimen/h8"
-        />
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_movies"
@@ -24,6 +25,4 @@
         tools:listitem="@layout/item_movie" >
 
     </androidx.recyclerview.widget.RecyclerView>
-
-
 </LinearLayout>
