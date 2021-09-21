@@ -18,7 +18,7 @@ import com.slicedwork.tmdbmovies.data.model.Technical
 import com.slicedwork.tmdbmovies.data.repository.CreditsRepository
 import com.slicedwork.tmdbmovies.view.adapter.CastAdapter
 import com.slicedwork.tmdbmovies.viewmodel.MovieDetailsViewModel
-import com.slicedwork.tmdbmovies.util.viewmodelfactory.MovieDetailsViewModelFactory
+import com.slicedwork.tmdbmovies.viewmodel.MovieDetailsViewModel.MovieDetailsViewModelFactory
 
 class MovieDetailsFragment : Fragment(), View.OnClickListener {
 

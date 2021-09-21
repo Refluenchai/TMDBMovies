@@ -19,7 +19,7 @@ import com.slicedwork.tmdbmovies.data.repository.GenresRepository
 import com.slicedwork.tmdbmovies.data.repository.MoviesRepository
 import com.slicedwork.tmdbmovies.view.adapter.MoviesAdapter
 import com.slicedwork.tmdbmovies.viewmodel.MoviesViewModel
-import com.slicedwork.tmdbmovies.util.viewmodelfactory.MoviesViewModelFactory
+import com.slicedwork.tmdbmovies.viewmodel.MoviesViewModel.MoviesViewModelFactory
 
 class MoviesFragment : Fragment(), AdapterView.OnItemSelectedListener {
 

@@ -2,6 +2,7 @@ package com.slicedwork.tmdbmovies.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import com.slicedwork.tmdbmovies.R
 import com.slicedwork.tmdbmovies.data.model.Movie
 import com.slicedwork.tmdbmovies.data.model.Person
@@ -43,6 +44,18 @@ class ActorDetailViewModel(
                 }
                 is Result.ServerError -> errorLiveData.value = R.string.erro_500_generic
             }
+        }
+    }
+
+    class ActorDetailViewModelFactory(
+        private val personRepository: PersonRepository,
+        private val moviesRepository: MoviesRepository
+    ) : ViewModelProvider.Factory {
+        @Suppress("UNCHECKED_CAST")
+        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+            if (modelClass.isAssignableFrom(ActorDetailViewModel::class.java))
+                return ActorDetailViewModel(personRepository, moviesRepository) as T
+            throw IllegalArgumentException("Unknown ViewModel class")
         }
     }
 }

@@ -18,7 +18,7 @@ import com.slicedwork.tmdbmovies.data.repository.MoviesRepository
 import com.slicedwork.tmdbmovies.data.repository.PersonRepository
 import com.slicedwork.tmdbmovies.view.adapter.MoviesAdapter
 import com.slicedwork.tmdbmovies.viewmodel.ActorDetailViewModel
-import com.slicedwork.tmdbmovies.util.viewmodelfactory.ActorDetailViewModelFactory
+import com.slicedwork.tmdbmovies.viewmodel.ActorDetailViewModel.ActorDetailViewModelFactory
 
 class ActorDetailsFragment : Fragment(), View.OnClickListener {
 
