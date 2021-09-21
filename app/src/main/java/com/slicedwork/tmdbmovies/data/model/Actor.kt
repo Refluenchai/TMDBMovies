@@ -20,9 +20,7 @@ data class Actor(
         return 0
     }
 
-    override fun writeToParcel(p0: Parcel?, p1: Int) {
-        TODO("Not yet implemented")
-    }
+    override fun writeToParcel(p0: Parcel?, p1: Int) {}
 
 
     companion object CREATOR : Parcelable.Creator<Actor> {
