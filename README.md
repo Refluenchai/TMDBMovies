@@ -11,7 +11,7 @@
   - "person/{person_id}": Pessoa por trás do papel, informações como nome, local e data de nascimento e sua biografia.
   - "person/{person_id}/movie_credits": Filmes em que a pessoa específica participou. 
   
-- Conta com uma activity com nav_graph que contém 4 fragments, sendo um para login, outro para mostrar a lista de filmes
+- Conta com uma activity com nav_graph que contém 4 fragments, sendo um para login atraves da chave de API gerada no TMDB, outro para mostrar a lista de filmes
 e os outros dois para mostrar detalhes sobre o filme ou o ator escolhido.
 
 #
